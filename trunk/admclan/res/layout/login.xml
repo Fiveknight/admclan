@@ -1,0 +1,168 @@
+<LinearLayout 
+    xmlns:android 		  = "http://schemas.android.com/apk/res/android"
+    xmlns:tools			  = "http://schemas.android.com/tools"
+    android:id			  = "@+id/RelativeLayout1"
+    android:layout_width  = "fill_parent"
+    android:layout_height = "fill_parent"
+    android:orientation   = "vertical">
+	
+    <ImageView
+        android:id			  = "@+id/imLogo"
+        android:layout_width  = "match_parent"
+        android:layout_height = "wrap_content"
+        android:gravity		  = "center"
+        android:scaleType	  = "fitXY"
+        android:src			  = "@drawable/logo_brunidos" />
+    
+	<LinearLayout
+	    android:layout_width  = "fill_parent"
+	    android:layout_height = "fill_parent"
+	    android:orientation	  = "horizontal"
+	    android:gravity		  = "center_vertical" >
+
+		<LinearLayout
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:gravity="center_vertical"
+		    android:paddingLeft="10dp"
+		    android:orientation="vertical" >
+
+		    <TextView
+		        android:id="@+id/lbEmail"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="Email" />
+
+		    <EditText
+		        android:id="@+id/txEmail"
+		        android:layout_width="230dp"
+		        android:layout_height="wrap_content"
+		        android:ems="10"
+		        android:inputType="textEmailAddress"
+		        android:labelFor="@+id/txEmail" />
+		    
+		    <TextView
+		        android:id="@+id/lbSenha"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="10dp"
+		        android:text="Senha" />
+		    
+		 	<EditText
+		        android:id="@+id/txSenha"
+		        android:layout_width="230dp"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="10dp"
+		        android:ems="10"
+		        android:inputType="textPassword"
+				android:labelFor="@+id/txSenha" />
+		 	
+		    <Button
+		        android:id="@+id/btLogin"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="10dp"
+		        android:layout_marginLeft="30dp"
+				android:layout_gravity="center"
+		        android:text="Login" />
+		</LinearLayout>
+
+		<ImageView
+		    android:id="@+id/imBarbaro"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:src="@drawable/barbaro" />	            	    
+		
+
+		
+    <!-- 
+
+    
+  
+
+
+    
+ -->
+	</LinearLayout>
+</LinearLayout>
+
+
+<!-- <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    tools:context="midianet.admclan.TelaLogin" >
+	
+    <ImageView
+        android:id="@+id/imLogo"
+		android:scaleType   = "fitXY"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo_brunidos" />
+
+    <TextView
+        android:id="@+id/lbEmail"
+        android:layout_width="74dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/imLogo"
+        android:layout_marginLeft="58dp"
+        android:layout_marginTop="70dp"
+        android:text="Email" />
+    
+  	<EditText
+        android:id="@+id/txEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/lbEmail"
+        android:layout_alignLeft="@+id/lbEmail"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="textEmailAddress" >
+        <requestFocus />
+    </EditText>
+    
+    <TextView
+        android:id="@+id/lbSenha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lbEmail"
+        android:layout_below="@+id/lbEmail"
+        android:layout_marginTop="34dp"
+        android:text="Senha" />
+    
+ 	<EditText
+        android:id="@+id/txSenha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft ="@+id/lbSenha"
+        android:layout_alignTop  ="@+id/lbSenha"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:inputType="textPassword"/>    
+
+    <Button
+        android:id="@+id/btLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txSenha"
+        android:layout_alignTop  ="@+id/txSenha"
+        android:layout_marginTop="50dp"        
+        android:text="Login" />
+    
+    <ImageView
+        android:id="@+id/imBarbaro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/btLogin"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/barbaro" />
+	
+</RelativeLayout> -->

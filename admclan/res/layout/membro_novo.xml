@@ -1,0 +1,191 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+	<LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal" >
+    	 
+		<Button
+		    android:layout_width="wrap_content"
+		    android:layout_height="20dp"
+		    android:textStyle="normal"
+			android:textSize="14sp"
+		    android:background="@null"
+		    android:gravity="left"
+		    android:text="Cancelar" />
+
+		<TextView
+		    android:layout_width="wrap_content"
+		    android:layout_height="20dp"
+		    android:gravity="center"
+	    	android:textStyle = "bold"
+		    android:text="Novo Membro" />
+
+		<Button
+    		android:layout_width="wrap_content"
+		    android:layout_height="20dp"
+		    android:textStyle="normal"
+			android:textSize="14sp"
+		    android:background="@null"
+    		android:text="OK"			 
+		    android:gravity="right"/>	    
+	</LinearLayout>
+	
+	<LinearLayout 
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal" 
+    	android:paddingLeft="10dp"
+    	android:paddingRight="10dp"> 
+
+		<TextView 
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:text="Apelido:"
+    		android:gravity="right"/>
+
+		<EditText 
+    		android:layout_width="match_parent"
+    		android:layout_height="wrap_content"
+    		android:id ="@+id/txApelido"
+    		android:layout_marginLeft="15dip"/>	    
+	</LinearLayout>
+	<LinearLayout 
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal" 
+    	android:paddingLeft="10dp"
+    	android:paddingRight="10dp"> 			    
+		<TextView 
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:text="Nome:"
+    		android:gravity="right"/>
+
+		<EditText 
+    		android:layout_width="match_parent"
+    		android:layout_height="wrap_content"
+    		android:id ="@+id/txNome"
+    		android:layout_marginLeft="15dip"/>
+	</LinearLayout>
+	<LinearLayout 
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal" 
+    	android:paddingLeft="10dp"
+    	android:paddingRight="10dp"> 			    
+		<TextView 
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:text="Email:"
+    		android:gravity="right"/>
+
+		<EditText 
+    		android:layout_width="match_parent"
+    		android:layout_height="wrap_content"
+    		android:id ="@+id/txEmail"
+    		android:layout_marginLeft="15dip"/>
+	</LinearLayout>
+	<LinearLayout 
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal" 
+    	android:paddingLeft="10dp"
+    	android:paddingRight="10dp"> 			    
+		<TextView 
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:text="Senha:"
+    		android:gravity="right"/>
+
+		<EditText 
+    		android:layout_width="match_parent"
+    		android:layout_height="wrap_content"
+    		android:id ="@+id/txSenha"
+    		android:layout_marginLeft="15dip"/>
+	</LinearLayout>
+	<LinearLayout 
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal" 
+    	android:paddingLeft="10dp"
+    	android:paddingRight="10dp"> 			    
+		<TextView 
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:text="WhatsApp:"
+    		android:gravity="right"/>
+
+		<EditText 
+    		android:layout_width="match_parent"
+    		android:layout_height="wrap_content"
+    		android:id ="@+id/txTelefone"
+    		android:layout_marginLeft="15dip"/>
+	</LinearLayout>
+	<LinearLayout 
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal" 
+    	android:paddingLeft="10dp"
+    	android:paddingRight="10dp"> 			    
+		<TextView 
+    		android:layout_width="20dip"
+    		android:layout_height="wrap_content"
+    		android:text="CV:"
+    		android:gravity="right"/>
+
+		<EditText 
+    		android:layout_width="50dip"
+    		android:layout_height="wrap_content"
+    		android:id ="@+id/txCV"/>
+		<TextView 
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:text="Experiência:"/>
+		<EditText 
+    		android:layout_width="50dip"
+    		android:layout_height="wrap_content"
+    		android:id ="@+id/txExperiencia"
+    		android:layout_marginLeft="15dip"/>
+	</LinearLayout>
+	<LinearLayout 
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal" 
+    	android:paddingLeft="10dp"
+    	android:paddingRight="10dp"> 			    
+		<TextView 
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:text="Data Nascimento:"
+    		android:gravity="right"/>
+
+		<EditText 
+    		android:layout_width="match_parent"
+    		android:layout_height="wrap_content"
+    		android:id ="@+id/txDataNascimento"
+    		android:layout_marginLeft="15dip"/>
+	</LinearLayout>
+		<LinearLayout 
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal" 
+    	android:paddingLeft="10dp"
+    	android:paddingRight="10dp"> 			    
+		<TextView 
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:text="Observação:"
+    		android:gravity="right"/>
+
+		<EditText 
+    		android:layout_width="match_parent"
+    		android:layout_height="wrap_content"
+    		android:id ="@+id/txObservacao"
+    		android:layout_marginLeft="15dip"/>
+	</LinearLayout>
+
+</LinearLayout>

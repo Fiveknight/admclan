@@ -2,6 +2,9 @@
 <resources>
     <color name="branco" >#FFFFFF</color>
     <color name="azul_claro" >#CCFFFF</color>
+    <color name="azul_claro_2" >#99FFFF</color>
     <color name="azul_neon" >#3300FF</color>
     <color name="vermelho_claro">#FF0000</color>
+    <color name="azul">#3366FF</color>
+    <color name="cinza">#CCCCCC</color>
 </resources>

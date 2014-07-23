@@ -1,17 +1,16 @@
 /*
  * InfraExcecao.java
  * 
- * Criado pela MIDIANET Sistemas Comerciais.
- * Artefato integrante dos ativos de Infra-Estrutura de aplicações JAVA.
- * 
- * Todos os direitos estão reservados.
+ * Desenvolvido por Midianet.
+ *  
+ * Todos os direitos reservados.
  */
 
 package midianet.admclan.excecao;
 
 /**
  * <p><b>InfraExcecao</b></p>
- * Classe que representa a excecao genérica para a camdada de persistência.
+ * Classe que representa a exceção genérica para a camdada de infra estrutura (persistência/io).
  *
  * @see Exception
  *
@@ -23,26 +22,26 @@ public class InfraExcecao extends Exception {
 	/**
 	 * Construtor que recebe uma mensagem pura como argumento.
 	 * 
-	 * @param mensagem mensagem da excecao.
+	 * @param mensagem mensagem da exceção.
 	 */
 	public InfraExcecao(final String mensagem) {
 		super(mensagem);
 	}
 	
 	/**
-	 * Construtor que recebe uma mensagem pura como argumento a excecao que originou.
+	 * Construtor que recebe uma mensagem pura como argumento a exceção que originou.
 	 * 
-	 * @param mensagem mensagem da excecao.
-	 * @param origem  excecao original.
+	 * @param mensagem mensagem da exceção.
+	 * @param origem  exceção original.
 	 */
 	public InfraExcecao(final String mensagem, final Throwable origem) {
 		super(mensagem, origem);
 	}
 	
 	/**
-	 * Construtor que recebe como argumento a excecao que originou.
+	 * Construtor que recebe como argumento a exceção que originou.
 	 * 
-	 * @param origem  excecao original.
+	 * @param origem  exceção original.
 	 */	
 	public InfraExcecao(final Throwable origem) {
 		super(origem);

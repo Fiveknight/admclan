@@ -28,7 +28,9 @@ import midianet.admclan.constant.Status;
 	@NamedQuery(name	= "MEMBRO.listarTodos", 
 				query	= "SELECT m FROM Membro m order by m.apelido")
 })
-public class Membro {
+public class Membro extends Entidade<Long> {
+	
+	private static final long serialVersionUID = 2642563651095643388L;
 	
 	@Id
 	@GeneratedValue(generator = "seqMembro")

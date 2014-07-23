@@ -1,10 +1,9 @@
 /*
- * RepositorioMensagensExcessao.java
- * 
- * Criado pela MIDIANET Sistemas Comerciais.
- * Artefato integrante dos ativos de Infra-Estrutura de aplicações JAVA.
- * 
- * Todos os direitos estão reservados.
+ * RepositorioMensagens.java
+  * 
+ * Desenvolvido por Midianet.
+ *  
+ * Todos os direitos reservados.
  */
 
 package midianet.admclan.excecao;
@@ -14,10 +13,10 @@ import java.text.MessageFormat;
 import java.util.ResourceBundle;
 
 /**
- * <p><b>RepositorioMensagensExcessao</b></p>
+ * <p><b>RepositorioMensagens</b></p>
  * Classe que representa o gerenciador de mensagens.
  *
- * @author Marcos Fernando Costa.
+ * @author Marcos Fernando.
  */
 public abstract class RepositorioMensagens {
 	
@@ -34,11 +33,11 @@ public abstract class RepositorioMensagens {
 	/**
 	 * Método estático interno que retorna o Bundle (lista de mensagens no arquivo) de mensagens 
 	 * para ser utilizado pelos métodos que montam a mensagem.
-	 * O arquivo deverá ser chamado de <b>exceções.properties</b> e deve estar no classpath da aplicações.
+	 * O arquivo deverá ser chamado de <b>excecoes.properties</b> e deve estar no classpath da aplicações.
 	 *  
 	 * @return {@link ResourceBundle}
 	 * 
-	 * @throws InfraExcecao Possível excessão as ser lançada caso não consiga recuperar o arquivo de mensagens.
+	 * @throws InfraExcecao Possível exceção as ser lançada caso não consiga recuperar o arquivo de mensagens.
 	 */
 	private static ResourceBundle getMensagens() throws InfraExcecao{
 		

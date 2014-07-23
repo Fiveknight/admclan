@@ -1,3 +1,11 @@
+/*
+ * Membro.java
+ * 
+ * Desenvolvido por Midianet.
+ *  
+ * Todos os direitos reservados.
+ */
+
 package midianet.admclan.entidade;
 
 import java.util.Date;
@@ -17,9 +25,21 @@ import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
 
-import midianet.admclan.constant.Cargo;
-import midianet.admclan.constant.Status;
+import midianet.admclan.constante.Cargo;
+import midianet.admclan.constante.Status;
 
+
+/**
+ * Classe que representa uma entidade Membro (pessoal envolvida no clan).
+ * 
+ * @param Long tipo do identificador da entidade.
+ * 
+ * @author Marcos Fernando.
+ * 
+ * @see Enum
+ * 
+ * @category Dominio
+ */ 
 @Entity
 @Table(name = "TB_MEMBRO")
 @SequenceGenerator(	name 			= "seqMembro", 

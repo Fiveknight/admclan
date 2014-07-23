@@ -1,17 +1,16 @@
  /*
- * NegocioExcessao.java
+ * NegocioExcecao.java
  * 
- * Criado pela MIDIANET Sistemas Comerciais.
- * Artefato integrante dos ativos de Infra-Estrutura de aplicações JAVA.
- * 
- * Todos os direitos estão reservados.
+ * Desenvolvido por Midianet.
+ *  
+ * Todos os direitos reservados.
  */
 
 package midianet.admclan.excecao;
 
 /**
- * <p><b>NegocioExcessao</b></p>
- * Classe que representa a excessao genérica para a camada de Negócio.
+ * <p><b>NegocioExcecao</b></p>
+ * Classe que representa a exceção genérica para a camada de Negócio.
  *
  * @see Exception
  *

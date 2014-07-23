@@ -1,3 +1,4 @@
+
 /*
  * 
  */
@@ -9,12 +10,12 @@ package midianet.admclan.constant;
  * @author marcosfernandocosta
  *
  */
-public enum Cargo {
+public enum Status {
 	
 	/**
 	 * 
 	 */
-	Lider(1), Anciao(2), Membro(3);
+	Ativo(1), Inativo(0);
 	
 	private final int valor;
 	
@@ -22,7 +23,7 @@ public enum Cargo {
 	 * 
 	 * @param valor
 	 */
-	Cargo(final int valor){
+	Status(final int valor){
 		this.valor = valor;
 	}
 	

@@ -27,4 +27,10 @@ public class MembroSR {
 		
 	}
 	
+	
+	@RequestMapping(value = "{email}", method = RequestMethod.PUT)	
+	public void criarMembro(final String email) throws InfraExcecao{
+		System.out.println("enviar email para " + email);	
+	}
+	
 }

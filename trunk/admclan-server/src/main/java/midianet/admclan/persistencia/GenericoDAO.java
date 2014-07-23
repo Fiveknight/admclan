@@ -8,8 +8,8 @@ import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
 
-import midianet.framework.excessao.InfraExcessao;
-import midianet.framework.persistencia.entidade.Entidade;
+import midianet.admclan.entidade.Entidade;
+import midianet.admclan.excecao.InfraExcecao;
 
 import org.springframework.stereotype.Repository;
 
@@ -24,32 +24,32 @@ public abstract class GenericoDAO<T extends Entidade<?>>{
 		return ((Class<T>) ((ParameterizedType) getClass().getGenericSuperclass()).getActualTypeArguments()[0]);
 	}
 	
-	public void incluir(final T entidade) throws InfraExcessao{
+	public void incluir(final T entidade) throws InfraExcecao{
 		try{
 			persistencia.persist(entidade);
 		}catch(final Exception e){
-			throw new InfraExcessao(e);
+			throw new InfraExcecao(e);
 		}
 	}
 	
-	public void alterar(final T entidade) throws InfraExcessao{
+	public void alterar(final T entidade) throws InfraExcecao{
 		try{
 			persistencia.merge(entidade);
 			persistencia.flush();
 		}catch(final Exception e){
-			throw new InfraExcessao(e);
+			throw new InfraExcecao(e);
 		}
 	}
 	
-	public T obterPorId(final Serializable id) throws InfraExcessao{
+	public T obterPorId(final Serializable id) throws InfraExcecao{
 		try{
 			return persistencia.find(getClasse(), id);
 		}catch(final Exception e){
-			throw new InfraExcessao(e);
+			throw new InfraExcecao(e);
 		}
 	}
 	
-	public void excluir(final T entidade) throws InfraExcessao{
+	public void excluir(final T entidade) throws InfraExcecao{
 		try{
 			final T persistente = obterPorId(entidade.getId());
 			
@@ -57,11 +57,11 @@ public abstract class GenericoDAO<T extends Entidade<?>>{
 				persistencia.remove(persistente);
 			}
 		}catch(final Exception e){
-			throw new InfraExcessao(e);
+			throw new InfraExcecao(e);
 		}
 	}
 	
-	public void excluirPorId(final Serializable id) throws InfraExcessao {
+	public void excluirPorId(final Serializable id) throws InfraExcecao {
 		try{
 			final T persistente = obterPorId(id);
 			
@@ -69,12 +69,12 @@ public abstract class GenericoDAO<T extends Entidade<?>>{
 				persistencia.remove(persistente);
 			}
 		}catch(final Exception e){
-			throw new InfraExcessao(e);
+			throw new InfraExcecao(e);
 		}
 	}
 		
 	@SuppressWarnings("unchecked")
-	public List<T> listarTodos() throws InfraExcessao{
+	public List<T> listarTodos() throws InfraExcecao{
 		try{
 			
 			final Query pesquisa = persistencia.createQuery(" from " + getClasse().getSimpleName());
@@ -82,7 +82,7 @@ public abstract class GenericoDAO<T extends Entidade<?>>{
 			return pesquisa.getResultList();
 			
 		}catch(final Exception e){
-			throw new InfraExcessao(e);
+			throw new InfraExcecao(e);
 		}
 	}
 }

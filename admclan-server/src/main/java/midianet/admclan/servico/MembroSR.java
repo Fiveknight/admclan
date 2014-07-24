@@ -33,7 +33,7 @@ public class MembroSR {
 	 * @return Membro Membro encontrado como o identificador informado.
 	 * @throws InfraExcecao Possível exceção a ser lançada caso ocorra algum problema ao interagir com o banco de dados.
 	 */
-	@RequestMapping(value = "{id}", method = RequestMethod.GET)
+	@RequestMapping(value = "/{id}", method = RequestMethod.GET)
 	public @ResponseBody Membro obterPorId(@PathVariable Long id) throws ValorNaoInformadoExcecao, InfraExcecao {
 		
 		if(id == null){
@@ -51,7 +51,7 @@ public class MembroSR {
 	 * 
 	 * @throws InfraExcecao Possível exceção a ser lançada caso ocorra algum problema ao interagir com o banco de dados. 
 	 */
-	@RequestMapping(value = "{email}", method = RequestMethod.PUT)	
+	@RequestMapping(value = "/{email}", method = RequestMethod.PUT)	
 	public void criarMembro(final String email) throws ValorNaoInformadoExcecao, ValorInvalidoExcecao, InfraExcecao{
 		
 		if(email == null || email.isEmpty()){

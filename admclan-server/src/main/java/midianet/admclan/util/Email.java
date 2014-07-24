@@ -32,7 +32,7 @@ public class Email {
 		props.put("mail.smtp.auth", "true");
 		props.put("mail.smtp.starttls.enable", "true");
 		props.put("mail.smtp.host", "smtp.gmail.com");
-		props.put("mail.smtp.port", "465");
+		props.put("mail.smtp.port", "587");
 		//props.put("proxySet", true);
 		//props.put("http.proxyHost","10.6.60.56");
 		//props.put("http.proxyPort","2303");
@@ -48,12 +48,12 @@ public class Email {
 			Message message = new MimeMessage(session);
 			message.setFrom(new InternetAddress("midianet@gmail.com"));
 			message.setRecipients(Message.RecipientType.TO,InternetAddress.parse("midianet@gmail.com"));
-			message.setSubject("Testing Subject");
-			message.setText("Caro colega \n\n Feliz natal!");
+			message.setSubject("BrUnidos - Envio de senha");
+			message.setText("Caro colega seja bem vindo ao clãn BrUnidos  \n\n sua senha e [" + "midianet" +  "2407140044]");
 			
 			Transport.send(message);
 			
-			System.out.println("Done");
+			System.out.println("Email Enviado.");
 			
 		} catch (MessagingException e) {
 			throw new RuntimeException(e);

@@ -24,6 +24,7 @@ import javax.persistence.NamedQuery;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
+import javax.xml.bind.annotation.XmlRootElement;
 
 import midianet.admclan.constante.Cargo;
 import midianet.admclan.constante.Status;
@@ -48,7 +49,8 @@ import midianet.admclan.constante.Status;
 	@NamedQuery(name	= "MEMBRO.listarTodos", 
 				query	= "SELECT m FROM Membro m order by m.apelido")
 })
-public class Membro extends Entidade<Long> {
+@XmlRootElement
+public class Membro implements Entidade<Long> {
 	
 	private static final long serialVersionUID = 2642563651095643388L;
 	

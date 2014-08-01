@@ -3,7 +3,6 @@ package midianet.admclan.servico;
 import javax.annotation.Resource;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
-import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.MediaType;
@@ -12,7 +11,6 @@ import midianet.admclan.entidade.Membro;
 import midianet.admclan.excecao.InfraExcecao;
 import midianet.admclan.excecao.ValorNaoInformadoExcecao;
 import midianet.admclan.persistencia.MembroDB;
-import midianet.admclan.to.MembroVO;
 
 import org.springframework.stereotype.Controller;
 
@@ -42,10 +40,15 @@ public class LoginSR {
 		if(senha == null){
 			throw new ValorNaoInformadoExcecao("senha");
 		}
+		final Membro membro = dao.obterMembroPorEmail(email);
 		
-		Membro membro = dao.obterPorId(1L);
+		if(membro != null){
+			if(membro.getSenha().equals(senha)){
+				return membro;
+			}
+		}
 
-		return membro;
+		return null;
 		
 	}	
 }

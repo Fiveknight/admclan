@@ -46,8 +46,10 @@ import midianet.admclan.constante.Status;
 @SequenceGenerator(	name 			= "seqMembro", 
 					sequenceName	= "SQ_MEMBR_ID")
 @NamedQueries({
-	@NamedQuery(name	= "MEMBRO.listarTodos", 
-				query	= "SELECT m FROM Membro m order by m.apelido")
+	@NamedQuery(name	= "membro.listarTodos", 
+				query	= "SELECT m FROM Membro m order by m.apelido"),
+	@NamedQuery(name	= "membro.obterPorEmail",
+	            query   = "SELECT m FROM Membro m where m.email = :email")	
 })
 @XmlRootElement
 public class Membro implements Entidade<Long> {

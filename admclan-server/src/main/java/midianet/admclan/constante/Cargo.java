@@ -8,6 +8,9 @@
 
 package midianet.admclan.constante;
 
+import javax.xml.bind.annotation.XmlEnum;
+import javax.xml.bind.annotation.XmlType;
+
 /**
  * Enumerador que representa o cargo de um membro.
  * 
@@ -17,6 +20,8 @@ package midianet.admclan.constante;
  * 
  * @category Dominio
  */
+@XmlType
+@XmlEnum
 public enum Cargo {
 	
 	/**
